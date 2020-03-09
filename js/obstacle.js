@@ -18,4 +18,16 @@ class Obstacle {
   update() {
     this.x += this.speed;
   }
+  left() {
+    return this.x;
+  }
+  right() {
+    return this.x + this.width;
+  }
+  top() {
+    return this.y;
+  }
+  bottom() {
+    return this.y + this.height;
+  }
 }
